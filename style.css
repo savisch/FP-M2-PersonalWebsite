@@ -5,13 +5,13 @@
 }
 
 body {
-    background-color: darkgrey;
+    background-color: grey;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #header {
     width: 80%;
-    background-color: rgb(215, 215, 215);
+    background-color: rgb(235, 235, 235);
     margin:0 auto;
     text-align: center;
     /* border: 1px solid rgb(207, 12, 12); */
@@ -97,14 +97,26 @@ h2 {
 }
 
 #repos {
-    height: 500px;
+    height: 400px;
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     border: 1px solid chocolate
+}
+
+.pinned-repo {
+    height: 40%;
+    width: 30%;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 0 0 8px  rgb(27, 26, 26);
+    
 }
 
 footer {
     width:80%;
     height: 50px;
-    background-color: rgb(215, 215, 215);
+    background-color: rgb(235, 235, 235);
     margin: 0 auto;
     box-shadow: 0 0 8px  rgb(27, 26, 26);
     display: flex;
