@@ -7,9 +7,10 @@
 #header {
     height: 100px;
     width: 80%;
-    background-color: cornflowerblue;
+    background-color: rgb(215, 215, 215);
     margin:0 auto;
     text-align: center;
+    border-bottom: 1px solid rgb(138, 127, 127);
 }
 
 h1 {
@@ -17,11 +18,20 @@ h1 {
 }
 
 #content {
-
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid red;
 }
 
 #image {
+    max-width:40%;
+    border: 1px solid blue;
+}
 
+img {
+    max-width: 100%;
+    box-shadow: 10px black;
+    border-radius: 180px;
 }
 
 #icons {
