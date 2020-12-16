@@ -4,13 +4,18 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: darkgrey;
+}
+
 #header {
     height: 100px;
     width: 80%;
     background-color: rgb(215, 215, 215);
     margin:0 auto;
     text-align: center;
-    border-bottom: 1px solid rgb(138, 127, 127);
+    /* border-bottom: 1px solid rgb(138, 127, 127); */
+    box-shadow: 0 0 8px  rgb(27, 26, 26);
 }
 
 h1 {
@@ -20,26 +25,68 @@ h1 {
 #content {
     width: 80%;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+}
+
+#personal-info {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    /* border: 1px solid blue; */
 }
 
 #image {
-    max-width:40%;
-    border: 1px solid blue;
+    /* border: 1px solid green; */
+    width: 45%;
 }
 
-img {
+#headshot {
     max-width: 100%;
-    box-shadow: 10px black;
-    border-radius: 180px;
+    box-shadow: 0 0 8px  rgb(27, 26, 26);
+    border-radius: 360px;
 }
 
-#icons {
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 60%;
+}
 
+h2 {
+    align-self: flex-start;
+    padding-left: 103px;
 }
 
 #skills {
+    /* border: 1px solid pink; */
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
 
+#skill-lists {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 1.75vw;
+    font-weight:500
+    /* border: 1px solid yellow; */
+}
+
+#icons {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid chartreuse; */
+}
+
+.social {
+    width: 10%;
 }
 
 #repos {
