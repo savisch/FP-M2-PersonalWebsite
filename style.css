@@ -36,7 +36,7 @@ h2 {
 
 #personal-info {
     width: 100%;
-    margin-top: 25px;
+    margin-top: 50px;
     display: flex;
     /* border: 1px solid blue; */
 }
@@ -96,6 +96,15 @@ h2 {
     width: 11%;
 }
 
+#github {
+    border: 1px solid pink;
+    width: 10%;
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #repos {
     height: 400px;
     margin-top: 25px;
@@ -106,11 +115,37 @@ h2 {
 }
 
 .pinned-repo {
-    height: 40%;
+    height: 30%;
     width: 30%;
     background-color: rgb(235, 235, 235);
     box-shadow: 0 0 8px  rgb(27, 26, 26);
     
+}
+
+#repo-icon {
+    /* border:1px solid red; */
+    width: 6%;
+}
+
+.name {
+    display: flex;
+    align-items: f;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 1.25vw;
+    /* border: 1px solid green; */
+}
+
+.description {
+    margin-top: 10px;
+}
+
+.language {
+    margin-top: 20px;
+}
+
+.name, .description, .language {
+    margin-left: 10px;
 }
 
 footer {
