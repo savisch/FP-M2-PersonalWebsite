@@ -3,3 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#header {
+    height: 100px;
+    width: 80%;
+    background-color: cornflowerblue;
+    margin:0 auto;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 18px;
+}
+
+#content {
+
+}
+
+#image {
+
+}
+
+#icons {
+
+}
+
+#skills {
+
+}
+
+#repos {
+
+}
+
+#contact {
+
+}
+
+#email {
+
+}
