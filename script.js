@@ -3,6 +3,16 @@
 // .link is the link to the repository
 // .language is the language of the repository
 
+// Animate social icons on hover with jQuery
+$(document).ready(function(){
+    $(".social-icon").hover(function(){
+        $(this).css({"box-shadow":"inset 0 0 0 50vw rgb(235, 235, 235)", "border-radius":"12px", "width":"90%"});
+    },
+    function(){
+        $(this).css({"box-shadow":"none", "border-radius":"none", "width":""});
+    });
+});
+
 let newRequest = new XMLHttpRequest();
 newRequest.onreadystatechange = function() {
     if(this.readyState == 4 && this.status == 200){
@@ -47,7 +57,7 @@ newRequest.onreadystatechange = function() {
 newRequest.open("GET", "https://gh-pinned-repos-5l2i19um3.vercel.app/?username=savisch", true );
 newRequest.send();
 
-
+// Sets the pinned repo dots the color of same on github language specific
 function dot_color(obj, id){
     switch(obj.language){
         case "Python":
@@ -62,5 +72,5 @@ function dot_color(obj, id){
         case "CSS":
             document.getElementById(id).style.backgroundColor = "#563d7c";
             break;
-    }
-}
+    };
+};
