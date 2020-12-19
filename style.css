@@ -193,7 +193,7 @@ footer {
 
 #map {
     width: 17%;
-    padding-right: 5px;
+    margin-right: 5px;
 }
 
 #email {
@@ -204,5 +204,5 @@ footer {
 
 #mail {
     width: 17%;
-    padding-right: 5px;
+    margin-right: 5px;
 }
