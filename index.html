@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="media-query.css"/>
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Personal Site</title>
 </head>
 <body>
-    <div class="wrapper">
     <header id="header">
         <h1>Scott A. Gasparick</h1>
         <h2>Software Engineer</h2>
     </header>
-    <section id="content">
+    <main id="content">
         <div id="personal-info">
             <div id="image">
                 <img id="headshot" src="resources/headshot.jpg"/>
@@ -58,7 +57,7 @@
         <div id="repos">
             <div class="pinned-repo">
                 <div class="name">
-                    <img id="repo-icon" src="resources/repository.png"/>
+                    <img class="repo-icon" src="resources/repository.png"/>
                     <a id="n1" target="blank" href=""></a>
                 </div>
                 <div class="description" id="d1">Description</div>
@@ -69,7 +68,7 @@
             </div>
             <div class="pinned-repo">
                 <div class="name">
-                    <img id="repo-icon" src="resources/repository.png"/>
+                    <img class="repo-icon" src="resources/repository.png"/>
                     <a id="n2" target="blank" href=""></a>
                 </div>
                 <div class="description" id="d2">Description</div>
@@ -80,7 +79,7 @@
             </div>
             <div class="pinned-repo">
                 <div class="name">
-                    <img id="repo-icon" src="resources/repository.png"/>
+                    <img class="repo-icon" src="resources/repository.png"/>
                     <a id="n3" target="blank" href=""></a>
                 </div>
                 <div class="description" id="d3">Description</div>
@@ -91,7 +90,7 @@
             </div>
             <div class="pinned-repo">
                 <div class="name">
-                    <img id="repo-icon" src="resources/repository.png"/>
+                    <img class="repo-icon" src="resources/repository.png"/>
                     <a id="n4" target="blank" href=""></a>
                 </div>
                 <div class="description" id="d4">Description</div>
@@ -102,7 +101,7 @@
             </div>
             <div class="pinned-repo">
                 <div class="name">
-                    <img id="repo-icon" src="resources/repository.png"/>
+                    <img class="repo-icon" src="resources/repository.png"/>
                     <a id="n5" target="blank" href=""></a>
                 </div>
                 <div class="description" id="d5">Description</div>
@@ -113,7 +112,7 @@
             </div>
             <div class="pinned-repo">
                 <div class="name">
-                    <img id="repo-icon" src="resources/repository.png"/>
+                    <img class="repo-icon" src="resources/repository.png"/>
                     <a id="n6" target="blank" href=""></a>
                 </div>
                 <div class="description" id="d6"></div>
@@ -123,15 +122,15 @@
                 </div>
             </div>
         </div>
-    </section>
-    </div>
-    <footer>
+    </main>
+
+    <footer id="footer">
         <div id="location">
-            <img id="map" class="footer-icon" src="/resources/map-pin.png"/>
-            <h3>Tulsa, Oklahoma</h3>
+            <a href="https://goo.gl/maps/vLoQHpLZMYKCPnp1A" target="_blank"><img id="map" class="footer-icon" src="resources/map-pin.png"></a>
+            <h3>Tulsa,&nbspOklahoma</h3>
         </div>
         <div id="email">
-            <img id="mail" class="footer-icon" src="/resources/mail.png"/>
+            <a href="https://google.com/mail/" target="_blank"><img id="mail" class="footer-icon" src="resources/mail.png"></a>
             <h3>savisch@gmail.com</h3>
         </div>
     </footer>

@@ -6,7 +6,7 @@
 
 body {
     background-color: grey;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #header {
@@ -26,6 +26,10 @@ h1 {
 h2 {
     font-size: 2.0vw;
     padding-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.2vw;
 }
 
 #content {
@@ -120,28 +124,38 @@ h2 {
     /* border: 1px solid chocolate */
 }
 
+.name a:link {
+    text-decoration: none;
+}
+
 .name a:hover {
-    color:rgba(56, 51, 59, 0.555);
+    text-decoration: underline;
+}
+
+.name a:visited {
+    color: blue;
 }
 
 .pinned-repo {
     height: 30%;
-    width: 30%;
+    width: 32%;
     background-color: rgb(235, 235, 235);
     box-shadow: 0 0 8px  rgb(27, 26, 26);
+    border-radius: 5px;
+    border: 1px solid brown;
 }
 
-#repo-icon {
+.repo-icon {
     /* border:1px solid red; */
     width: 6%;
 }
 
 .name {
     display: flex;
-    align-items: f;
+    /* align-items: baseline; */
     font-weight: 600;
     margin-top: 10px;
-    font-size: 1.25vw;
+    font-size: 1.20vw;
     /* border: 1px solid green; */
 }
 
@@ -168,11 +182,7 @@ h2 {
     margin-left: 10px;
 }
 
-.wrapper {
-    min-height: calc(100vh - 50px);
-}
-
-footer {
+#footer {
     width:80%;
     height: 50px;
     position: fixed;
@@ -186,14 +196,22 @@ footer {
 }
 
 #location {
-    /* border: 1px solid red; */
+    /* border: 1px solid red;  */
+    /* width: 15%; */
     display: flex;
-    align-items:center
+    align-items:center;
+    flex-wrap:nowrap;
 }
 
-#map {
-    width: 17%;
-    margin-right: 5px;
+#location a {
+    /* border: 1px solid blue; */
+    width: 15%;
+    margin-right: 3px;
+}
+
+.footer-icon {
+    width: 100%;
+    /* border:2px solid yellowgreen; */
 }
 
 #email {
@@ -202,7 +220,8 @@ footer {
     align-items:center
 }
 
-#mail {
-    width: 17%;
+#email a {
+    /* border: 1px solid blue; */
+    width: 15%;
     margin-right: 5px;
-}
+} 
