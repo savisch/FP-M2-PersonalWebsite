@@ -46,8 +46,8 @@ h3 {
 }
 
 #image {
-    /* border: 1px solid green; */
-    width: 45%;
+    border: 1px solid green;
+    width: 50%;
 }
 
 #headshot {
@@ -61,12 +61,12 @@ h3 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    /* border: 1px solid red; */
-    width: 60%;
+    border: 1px solid red;
+    width: 50%;
 }
 
 #skills {
-    /* border: 1px solid pink; */
+    border: 1px solid pink;
     width: 80%;
     height: 40%;
     display: flex;
@@ -86,14 +86,14 @@ h3 {
     padding-left: 20px;
     font-size: 1.75vw;
     font-weight:500;
-    /* border: 1px solid yellow; */
+    border: 1px solid yellow;
 }
 
 #icons {
     display: flex;
     justify-content: center;
     width: 75%;
-    /* border: 1px solid chartreuse; */
+    border: 1px solid chartreuse;
 }
 
 .social-icon{
@@ -142,7 +142,7 @@ h3 {
     background-color: rgb(235, 235, 235);
     box-shadow: 0 0 8px  rgb(27, 26, 26);
     border-radius: 5px;
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
 }
 
 .repo-icon {
@@ -155,7 +155,7 @@ h3 {
     /* align-items: baseline; */
     font-weight: 600;
     margin-top: 10px;
-    font-size: 1.20vw;
+    /* font-size: 1.20vw; */
     /* border: 1px solid green; */
 }
 
@@ -180,6 +180,7 @@ h3 {
 
 .name, .description, .language {
     margin-left: 10px;
+    /* border: 1px solid blue; */
 }
 
 #footer {
@@ -199,8 +200,8 @@ h3 {
     /* border: 1px solid red;  */
     /* width: 15%; */
     display: flex;
-    align-items:center;
-    flex-wrap:nowrap;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 #location a {
@@ -225,3 +226,86 @@ h3 {
     width: 15%;
     margin-right: 5px;
 } 
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1400px) {
+    .pinned-repo {
+        width: 48%;
+    }
+    #repos {
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    #repos {
+        justify-content: center;
+        margin-top: 5px;
+        margin-bottom: 450px;
+    }
+    .pinned-repo {
+        width: 80%;
+        margin-top: 10px;
+    } 
+    .repo-icon{
+        width: 3%;
+    }
+    #personal-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    #image {
+        width: 70%;
+    }
+    #info {
+        width: 70%;
+    }
+    #skills {
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+    #skills-heading {
+        font-size: 3.0vw;
+    }
+    #skill-lists {
+        font-size: 2.3vw;
+    }
+    #icons {
+        margin-top: 30px;
+    }
+    .social2 {
+        width: 9%;
+    }
+    #github {
+        width: 14%;
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 676px) {
+    .name {
+        font-size: 2.3vw;
+    }
+}
+
+@media only screen and (min-width: 990px) {
+    .name {
+        font-size: 1.9vw;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .name {
+        font-size: 1.7vw;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .name {
+        font-size: 1.3vw;
+    }
+}
