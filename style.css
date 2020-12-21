@@ -29,7 +29,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.2vw;
+    /* font-size: 1.2vw; */
 }
 
 #content {
@@ -46,7 +46,7 @@ h3 {
 }
 
 #image {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 50%;
 }
 
@@ -61,12 +61,12 @@ h3 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 50%;
 }
 
 #skills {
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
     width: 80%;
     height: 40%;
     display: flex;
@@ -86,14 +86,14 @@ h3 {
     padding-left: 20px;
     font-size: 1.75vw;
     font-weight:500;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 #icons {
     display: flex;
     justify-content: center;
     width: 75%;
-    border: 1px solid chartreuse;
+    /* border: 1px solid chartreuse; */
 }
 
 .social-icon{
@@ -147,7 +147,7 @@ h3 {
 
 .repo-icon {
     /* border:1px solid red; */
-    width: 6%;
+    width: 5%;
 }
 
 .name {
@@ -236,10 +236,23 @@ h3 {
     #repos {
         margin-bottom: 5%;
     }
+    .repo-icon {
+        width: 3.5%;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
+    h3 {
+        font-size: 2vw;
+    }
     
+    h2 {
+        font-size: 3vw;
+    }
+
+    h1 {
+        font-size: 4vw;
+    }
     #repos {
         justify-content: center;
         margin-top: 5px;
@@ -277,35 +290,90 @@ h3 {
         margin-top: 30px;
     }
     .social2 {
-        width: 9%;
+        width: 11%;
     }
     #github {
         width: 14%;
+        margin-top: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 776px) {
+    #github {
+        width: 18%;
+        margin-top: 25px;
+    }
+    #personal-info {
         margin-top: 20px;
     }
-
-}
-
-@media only screen and (min-width: 676px) {
-    .name {
-        font-size: 2.3vw;
+    .repo-icon {
+        width: 4%;
+    }
+    .dot {
+        height: 11px;
+        width: 11px;
+    }
+    h3 {
+        font-size: 2.4vw;
+    }
+    #skills-heading {
+        font-size: 3.7vw;
+    }
+    h1 {
+        font-size: 4.5vw;
+    }
+    h2 {
+        font-size: 3.5vw;
     }
 }
 
-@media only screen and (min-width: 990px) {
-    .name {
-        font-size: 1.9vw;
+@media only screen and (max-width: 476px) {
+    #image {
+        width: 90%;
     }
+    #info {
+        width: 90%;
+    }
+    #skills-heading {
+        font-size: 4.25vw;
+    }
+    #skill-lists {
+        font-size: 3vw;
+        width: 90%;
+    }
+    #icons {
+        width: 90%;
+    }
+    .social2 {
+        width: 14%;
+    }
+    #github {
+        width: 20%;
+    }
+    #repos {
+        width: 100%;
+        height: 100%;
+    }
+    .pinned-repo {
+        width: 100%;
+    }
+    .repo-icon {
+        width: 5.25%;
+    }
+    h3 {
+        font-size: 2.7vw;
+    }
+    .name, .description, span {
+        font-size: 3vw;
+    }
+    span {
+        margin-bottom: 5px;
+    }
+    .dot {
+        height: 8px;
+        width: 8px;
+    }
+
 }
 
-@media only screen and (min-width: 1280px) {
-    .name {
-        font-size: 1.7vw;
-    }
-}
-
-@media only screen and (min-width: 1400px) {
-    .name {
-        font-size: 1.3vw;
-    }
-}
